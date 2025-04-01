@@ -1,0 +1,9 @@
+# Makes alias' work with sudo
+alias sudo="sudo "
+
+# Neovim Alias'
+alias vim="nvim"
+alias vi="nvim"
+
+# Shortcuts
+alias dev="cd ~/Development"
