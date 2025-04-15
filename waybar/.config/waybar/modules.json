@@ -5,6 +5,10 @@
         "tooltip-format": "btw"
     },
 
+    "custom/power": {
+        "format": "",
+        "on-click": "~/.config/rofi/powermenu/type-4/powermenu.sh"
+    },
 
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -50,6 +54,15 @@
         "format-disconnected": "⚠",
 	"on-click": "sh ~/.config/waybar/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
 	 
+    },
+    "bluetooth": {
+	    "format": "",
+	    "format-disabled": "",
+	    "format-connected": "",
+	    "tooltip-format": "{device_alias}",
+	    "tooltip-format-connected": "{device_enumerate}\n{num_connections}",
+	    "tooltip-format-enumerate-connected": "{device_alias}",
+        "on-click": "blueman-manager"
     },
     "cpu": {
         "format": "  {usage}%",

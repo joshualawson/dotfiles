@@ -43,3 +43,4 @@
 # resize-overlay-duration = 4s 200ms
 
 background-opacity = 0.90
+confirm-close-surface = false

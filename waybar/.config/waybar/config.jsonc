@@ -17,12 +17,14 @@
         "idle_inhibitor",
         "pulseaudio",
         "network",
+	"bluetooth",
         "cpu",
         "memory",
         "temperature",
         "battery",
         "battery#bat2",
-        "clock"
+        "clock",
+	"custom/power"
     ],
     //Modules configuration
 

@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Fira Sans Semibold", FontAwesome, Material Symbols Outline, Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     transition: background-color .3s ease-out;
 }
@@ -48,7 +48,8 @@ window#waybar {
 #scratchpad,
 #power-profiles-daemon,
 #language,
-#mpd {
+#mpd,
+#custom-power {
     padding: 0 10px;
     border-radius: 15px;
 }
@@ -70,7 +71,8 @@ window#waybar {
 #scratchpad:hover,
 #power-profiles-daemon:hover,
 #language:hover,
-#mpd:hover {
+#mpd:hover,
+#custom-power:hover {
     background: rgba(26, 27, 38, 0.9);
 }
 
