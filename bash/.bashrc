@@ -2,6 +2,9 @@
 # ~/.bashrc
 #
 
+# Load Keychain and github key
+eval $(keychain --eval --quiet github)
+
 # Start Tmux by default
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
