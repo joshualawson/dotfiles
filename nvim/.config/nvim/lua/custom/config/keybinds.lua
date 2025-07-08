@@ -2,8 +2,8 @@ local builtin = require 'telescope.builtin'
 
 return {
   -- Scratch Keybinds
-  vim.keymap.set('n', '<leader><leader>sn', '<cmd>Scratch<cr>', { desc = 'Create a new scratch file' }),
-  vim.keymap.set('n', '<leader><leader>so', '<cmd>ScratchOpen<cr>', { desc = 'Open scratch file explorer' }),
+  vim.keymap.set('n', '<leader><leader>kn', '<cmd>Scratch<cr>', { desc = 'Create a new scratch file' }),
+  vim.keymap.set('n', '<leader><leader>ko', '<cmd>ScratchOpen<cr>', { desc = 'Open scratch file explorer' }),
 
   -- VimTest
   vim.keymap.set('n', '<leader>tf', ':TestFile<CR>', { noremap = false }),
