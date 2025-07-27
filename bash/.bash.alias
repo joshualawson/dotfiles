@@ -7,3 +7,7 @@ alias vi="nvim"
 
 # Shortcuts
 alias dev="cd ~/Development"
+
+update() {
+	yay -Syyuu --noconfirm
+}
