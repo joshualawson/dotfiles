@@ -586,6 +586,9 @@ require('lazy').setup({
         gopls = {},
         golangci_lint_ls = {},
         rust_analyzer = {},
+        htmlhint = {},
+        prettier = {},
+        eslint_d = {},
         yamlls = {
           settings = {
             yaml = {
@@ -722,6 +725,13 @@ require('lazy').setup({
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
         -- javascript = { { "prettierd", "prettier" } },
+        html = { 'prettier' },
+        css = { 'prettier' },
+        javascript = { 'prettier' },
+        typescript = { 'prettier' },
+        json = { 'prettier' },
+        yaml = { 'prettier' },
+        markdown = { 'prettier' },
         go = { 'goimports', 'gofumpt', 'goimports-reviser' },
       },
     },
