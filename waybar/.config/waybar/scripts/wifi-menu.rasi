@@ -1,0 +1,105 @@
+/**
+ * WiFi Menu Theme - Tokyo Night
+ */
+
+* {
+    background:     #15161EFF;
+    background-alt: #1A1B26FF;
+    foreground:     #C0CAF5FF;
+    selected:       #33467CFF;
+    active:         #9ECE6AFF;
+    urgent:         #F7768EFF;
+
+    font: "SpaceMono Nerd Font 11";
+    border-radius: 8px;
+}
+
+window {
+    transparency:     "real";
+    location:         northeast;
+    anchor:           northeast;
+    x-offset:         -10px;
+    y-offset:         50px;
+    width:            350px;
+    background-color: @background;
+    border:           2px solid;
+    border-color:     @selected;
+    border-radius:    12px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ "inputbar", "message", "listview" ];
+    spacing:          10px;
+    padding:          15px;
+}
+
+inputbar {
+    background-color: @background-alt;
+    text-color:       @foreground;
+    padding:          10px;
+    border-radius:    8px;
+    children:         [ "prompt", "entry" ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @active;
+    padding:          0 10px 0 0;
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @foreground;
+    placeholder:      "Search...";
+    placeholder-color: #565F89;
+}
+
+message {
+    background-color: @background-alt;
+    text-color:       @foreground;
+    padding:          8px 12px;
+    border-radius:    8px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            8;
+    spacing:          5px;
+    scrollbar:        false;
+    dynamic:          true;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @foreground;
+    padding:          10px 12px;
+    border-radius:    8px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color:       @foreground;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @foreground;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    highlight:        bold #7AA2F7;
+}

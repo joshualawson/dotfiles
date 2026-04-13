@@ -1,4 +1,11 @@
 {
+    "custom/vpn": {
+        "exec": "if ip link show proton0 &>/dev/null || ip link show tun0 &>/dev/null; then echo '{\"text\": \"󰌾\", \"tooltip\": \"VPN Connected\", \"class\": \"connected\"}'; else echo '{\"text\": \"\", \"tooltip\": \"\", \"class\": \"disconnected\"}'; fi",
+        "return-type": "json",
+        "interval": 5,
+        "format": "{}"
+    },
+
     "custom/arch": {
         "format": "󰣇",
         "tooltip": true,
@@ -44,7 +51,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "~/.config/waybar/scripts/volume-menu.py"
     },
     "network": {
         "format-wifi": " ",
@@ -52,7 +59,7 @@
         "tooltip-format": "{essid} | ({signalStrength}%)\n{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "⚠",
-	"on-click": "sh ~/.config/waybar/scripts/rofi-wifi-menu/rofi-wifi-menu.sh"
+	"on-click": "~/.config/waybar/scripts/wifi-menu.sh"
 	 
     },
     "bluetooth": {

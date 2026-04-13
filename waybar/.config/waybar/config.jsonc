@@ -17,6 +17,7 @@
         "idle_inhibitor",
         "pulseaudio",
         "network",
+	"custom/vpn",
 	"bluetooth",
         "cpu",
         "memory",

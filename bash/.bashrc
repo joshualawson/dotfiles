@@ -9,9 +9,9 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 
 # Start Tmux by default
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#  exec tmux
+#fi
 
 
 [[ -f ~/.bash.alias ]] && . ~/.bash.alias
@@ -35,3 +35,4 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Created by `pipx` on 2025-06-21 11:35:59
 export PATH="$PATH:/home/joshua/.local/bin"
+export PATH="$HOME/.npm-global/bin:$PATH"

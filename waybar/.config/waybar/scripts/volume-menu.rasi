@@ -1,0 +1,87 @@
+/**
+ * Volume Menu Theme - Tokyo Night
+ */
+
+* {
+    background:     #15161EFF;
+    background-alt: #1A1B26FF;
+    foreground:     #C0CAF5FF;
+    selected:       #33467CFF;
+    active:         #7AA2F7FF;
+    urgent:         #F7768EFF;
+
+    font: "SpaceMono Nerd Font 11";
+}
+
+window {
+    transparency:     "real";
+    location:         northeast;
+    anchor:           northeast;
+    x-offset:         -10px;
+    y-offset:         50px;
+    width:            200px;
+    background-color: @background;
+    border:           2px solid;
+    border-color:     @selected;
+    border-radius:    12px;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ "inputbar", "message", "listview" ];
+    spacing:          10px;
+    padding:          15px;
+}
+
+inputbar {
+    background-color: @background-alt;
+    text-color:       @foreground;
+    padding:          10px;
+    border-radius:    8px;
+    children:         [ "prompt" ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @active;
+    font:             "SpaceMono Nerd Font 16";
+    horizontal-align: 0.5;
+}
+
+message {
+    background-color: @background-alt;
+    text-color:       @foreground;
+    padding:          8px 12px;
+    border-radius:    8px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @foreground;
+    horizontal-align: 0.5;
+}
+
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            12;
+    spacing:          4px;
+    scrollbar:        false;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @foreground;
+    padding:          8px 12px;
+    border-radius:    8px;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color:       @foreground;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+}

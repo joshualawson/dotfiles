@@ -1,13 +1,18 @@
-# Makes alias' work with sudo
+# Makes aliases work with sudo
 alias sudo="sudo "
 
-# Neovim Alias'
+# Neovim Aliases
 alias vim="nvim"
 alias vi="nvim"
+alias v="nvim"
 
-# Shortcuts
-alias dev="cd ~/Development"
+# Development function
+dev() {
+    cd ~/Development
+    tmux new-session -A -s dev
+}
 
+# Update function
 update() {
-	yay -Syyuu --noconfirm
+    yay -Syyuu --noconfirm
 }

@@ -1,4 +1,5 @@
 return {
   'iamcco/markdown-preview.nvim',
-  lazy = false,
+  lazy = true,
+  ft = 'markdown',
 }

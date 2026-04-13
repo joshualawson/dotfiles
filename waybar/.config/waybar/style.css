@@ -49,9 +49,18 @@ window#waybar {
 #power-profiles-daemon,
 #language,
 #mpd,
-#custom-power {
+#custom-power,
+#custom-vpn {
     padding: 0 10px;
     border-radius: 15px;
+}
+
+#custom-vpn.connected {
+    color: #a6e3a1;
+}
+
+#custom-vpn.disconnected {
+    color: transparent;
 }
 
 #clock:hover,
@@ -72,7 +81,8 @@ window#waybar {
 #power-profiles-daemon:hover,
 #language:hover,
 #mpd:hover,
-#custom-power:hover {
+#custom-power:hover,
+#custom-vpn:hover {
     background: rgba(26, 27, 38, 0.9);
 }
 
